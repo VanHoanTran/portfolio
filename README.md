@@ -1,2 +1,3 @@
-# portfolio
-This is a personal bio website
+# Portfolio
+
+This is my bio website
