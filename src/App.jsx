@@ -1,3 +1,5 @@
+import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer";
 import Layout from "./components/Layout";
 import Main from "./components/Main";
@@ -11,7 +13,10 @@ function App() {
         <Menus>
           <Nav />
         </Menus>
-        <Main />
+        <Main>
+          <About />
+          <Experience />
+        </Main>
         <Footer />
       </Layout>
     </DarkModeProvider>

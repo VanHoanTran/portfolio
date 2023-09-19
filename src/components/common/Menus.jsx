@@ -2,6 +2,7 @@ import { createContext, useContext, useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
 import useOutsideClick from "../../hooks/useOutsideClick";
 import { createPortal } from "react-dom";
+import ButtonIcon from "./ButtonIcon";
 const MenusContext = createContext();
 
 function Menus({ children }) {
@@ -33,9 +34,9 @@ function Toggle({ id }) {
   };
 
   return (
-    <button onClick={handleClick}>
+    <ButtonIcon handleClick={handleClick}>
       <HiBars3 className="text-3xl" />
-    </button>
+    </ButtonIcon>
   );
 }
 
