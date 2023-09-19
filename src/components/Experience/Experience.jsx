@@ -26,7 +26,7 @@ const Experience = () => {
       <h1 className="border-b border-slate-700  pb-2 text-3xl font-semibold uppercase tracking-wide dark:border-slate-300 lg:text-4xl">
         I can help you with
       </h1>
-      <section className=" grid grid-cols-1 space-x-8 lg:grid-cols-2">
+      <section className=" grid grid-cols-1 lg:grid-cols-2 lg:space-x-8">
         <div className="pt-4">
           <p>
             Diam quam nulla porttitor massa id. Non odio euismod lacinia at quis
@@ -38,12 +38,12 @@ const Experience = () => {
             donec
           </p>
           <div className="flex justify-center p-8">
-            <div className=" flex items-center justify-center ">
+            <div className=" flex items-center justify-center grayscale  ">
               <img src="/programming-bg.png" alt="skill" />
             </div>
           </div>
         </div>
-        <ul>
+        <ul className=" divide-y divide-slate-700 dark:divide-slate-300">
           {expList.map((item) => (
             <Item item={item} key={item.id} />
           ))}
