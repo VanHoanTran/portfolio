@@ -12,7 +12,7 @@ const About = () => {
         src="/developer-anime.jpg"
         alt="a developer"
       />
-      <div className="mt-8 flex justify-center space-x-8 px-4 [&_p]:max-w-xs [&_p]:text-lg [&_p]:leading-8 lg:[&_p]:text-xl  ">
+      <div className="mt-8 flex justify-center space-x-8 px-8 [&_p]:max-w-xs [&_p]:text-lg [&_p]:leading-8 lg:[&_p]:text-xl  ">
         <p>
           Nulla malesuada pellentesque elit eget gravida cum sociis natoque
           penatibus. Porta nibh venenatis cras sed felis eget velit aliquet

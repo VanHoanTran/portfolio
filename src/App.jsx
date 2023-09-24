@@ -1,4 +1,5 @@
 import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer";
 import Layout from "./components/Layout";
@@ -18,6 +19,7 @@ function App() {
           <About />
           <Experience />
           <Projects />
+          <Contact />
         </Main>
         <Footer />
       </Layout>

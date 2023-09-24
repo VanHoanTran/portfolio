@@ -22,7 +22,7 @@ const Experience = () => {
     },
   ];
   return (
-    <div className="mt-8 max-w-full px-8 lg:mt-16 lg:px-16">
+    <div className=" mt-8 max-w-full px-8 lg:mt-16 lg:px-16">
       <h1 className="border-b border-slate-700  pb-2 text-3xl font-semibold uppercase tracking-wide dark:border-slate-300 lg:text-4xl">
         I can help you with
       </h1>
@@ -37,7 +37,7 @@ const Experience = () => {
             Enim sit amet venenatis urna cursus. Congue eu consequat ac felis
             donec
           </p>
-          <div className="flex justify-center p-8">
+          <div className="flex justify-center">
             <div className=" flex items-center justify-center grayscale  ">
               <img src="/programming-bg.png" alt="skill" />
             </div>
