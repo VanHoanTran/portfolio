@@ -1,0 +1,25 @@
+import Skill from "./Skill";
+
+const SkillSet = ({ skillSet, index }) => {
+  const { title, languages } = skillSet;
+
+  return (
+    <li>
+      <h2 className="pt-4 text-lg font-semibold uppercase tracking-wide">
+        <span className="inline-block w-8">
+          {index + 1 < 10 ? `0${index + 1}` : index}{" "}
+        </span>
+        {title}
+      </h2>
+      <ul className="flex flex-wrap">
+        {languages.map((item) => (
+          <Skill item={item} key={item.name} />
+        ))}
+      </ul>
+      {/* <p className="content ml-8 pb-2 dark:border-slate-300 ">{}</p>
+      <img src={icon} alt={`image of ${name}`} /> */}
+    </li>
+  );
+};
+
+export default SkillSet;

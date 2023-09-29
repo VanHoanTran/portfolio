@@ -14,27 +14,27 @@ export const skills = [
       },
       {
         name: "Java",
-        icon: "icons/java",
+        icon: "icons/java.svg",
         level: "",
       },
       {
         name: "Javascript",
-        icon: "icons/javascript",
+        icon: "icons/javascript.svg",
         level: "",
       },
       {
         name: "Swift",
-        icon: "icons/swift",
+        icon: "icons/swift.svg",
         level: "",
       },
       {
         name: "HTML",
-        icon: "icons/html",
+        icon: "icons/html.svg",
         level: "",
       },
       {
         name: "CSS",
-        icon: "icons/css",
+        icon: "icons/css.svg",
         level: "",
       },
     ],
@@ -44,27 +44,27 @@ export const skills = [
     languages: [
       {
         name: "React",
-        icon: "icons/react",
+        icon: "icons/react.svg",
         level: "",
       },
       {
         name: "Angular",
-        icon: "icons/angular",
+        icon: "icons/angular.svg",
         level: "",
       },
       {
         name: "Tailwinds",
-        icon: "icons/tailwinds",
+        icon: "icons/tailwinds.svg",
         level: "",
       },
       {
         name: "Bootstrap",
-        icon: "icons/bootstrap",
+        icon: "icons/bootstrap.svg",
         level: "",
       },
       {
         name: "ASP.NET",
-        icon: "icons/asp",
+        icon: "icons/asp.svg",
         level: "",
       },
     ],
@@ -74,27 +74,27 @@ export const skills = [
     languages: [
       {
         name: "MySQL",
-        icon: "icons/mysql",
+        icon: "icons/mysql.svg",
         level: "",
       },
       {
         name: "MongoDB",
-        icon: "icons/mongodb",
+        icon: "icons/mongodb.svg",
         level: "",
       },
       {
         name: "Oracle",
-        icon: "icons/oracle",
+        icon: "icons/oracle.svg",
         level: "",
       },
       {
         name: "Firebase",
-        icon: "icons/firebase",
+        icon: "icons/firebase.svg",
         level: "",
       },
       {
         name: "Node.js",
-        icon: "icons/node",
+        icon: "icons/node.svg",
         level: "",
       },
     ],
@@ -104,27 +104,27 @@ export const skills = [
     languages: [
       {
         name: "Docker",
-        icon: "icons/docker",
+        icon: "icons/docker.svg",
         level: "",
       },
       {
         name: "Git",
-        icon: "icons/git",
+        icon: "icons/git.svg",
         level: "",
       },
       {
         name: "Azure",
-        icon: "icons/azure",
+        icon: "icons/azure.svg",
         level: "",
       },
       {
         name: "AWS",
-        icon: "icons/aws",
+        icon: "icons/aws.svg",
         level: "",
       },
       {
         name: "GitHub",
-        icon: "icons/github",
+        icon: "icons/github.svg",
         level: "",
       },
     ],

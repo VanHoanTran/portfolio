@@ -1,27 +1,7 @@
 import { Edu } from "../../data/Edu";
-import Item from "./Item";
-
+import SkillSet from "./SkillSet";
+import { skills } from "../../Data/Skills";
 const Education = () => {
-  const expList = [
-    {
-      id: 1,
-      title: "Diam quam nulla porttitor",
-      content:
-        "Diam quam nulla porttitor massa id. Non odio euismod lacinia at quis risus sed vulputate odio. Consequat interdum varius sit amet mattis vulputate. Proin sed libero enim sed faucibus turpis in eu. Diam quam nulla porttitor massa id. Non odio euismod lacinia at quis risus sed vulputate odio. Consequat interdum varius sit amet mattis vulputate.",
-    },
-    {
-      id: 2,
-      title: "Non odio euismod",
-      content:
-        "Diam quam nulla porttitor massa id. Non odio euismod lacinia at quis risus sed vulputate odio. Consequat interdum varius sit amet mattis vulputate. Enim sit amet venenatis urna cursus.Diam quam nulla porttitor massa id. Non odio euismod lacinia at quis risus sed vulputate odio. Consequat interdum varius sit amet mattis vulputate.",
-    },
-    {
-      id: 3,
-      title: "Consequat interdum varius",
-      content:
-        "Diam quam nulla porttitor massa id. Non odio euismod lacinia at quis risus sed vulputate odio. Consequat interdum varius sit amet mattis vulputate. Diam quam nulla porttitor massa id. Non odio euismod lacinia at quis risus sed vulputate odio. Consequat interdum varius sit amet mattis vulputate.",
-    },
-  ];
   return (
     <div
       id="education"
@@ -40,8 +20,8 @@ const Education = () => {
           </div>
         </div>
         <ul className=" divide-y divide-slate-700 dark:divide-slate-300">
-          {expList.map((item) => (
-            <Item item={item} key={item.id} />
+          {skills.map((skill, index) => (
+            <SkillSet skillSet={skill} index={index} key={skill.title} />
           ))}
         </ul>
       </section>
