@@ -1,8 +1,9 @@
-const ButtonIcon = ({ children, handleClick }) => {
+const ButtonIcon = ({ children, handleClick, className, label = "" }) => {
   return (
     <button
+      aria-label={label}
       onClick={handleClick}
-      className="rounded p-2  transition-all [&>svg]:h-7 [&>svg]:w-7"
+      className={`${className} rounded p-2  transition-all [&>svg]:h-7 [&>svg]:w-7`}
     >
       {children}
     </button>

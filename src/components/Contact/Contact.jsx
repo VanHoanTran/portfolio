@@ -2,7 +2,7 @@ import { VscGithub } from "react-icons/vsc";
 import { AiOutlineLinkedin } from "react-icons/ai";
 const Contact = () => {
   return (
-    <div className="max-w-full px-8 lg:px-16">
+    <div id="contact" className="max-w-full scroll-mt-24 px-8 lg:px-16">
       <h1 className="border-b border-slate-700  pb-2 text-3xl font-semibold uppercase tracking-wide dark:border-slate-300 lg:text-4xl">
         Contact me
       </h1>

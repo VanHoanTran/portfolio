@@ -6,7 +6,11 @@ const DarkModeToggle = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
-    <ButtonIcon handleClick={toggleDarkMode}>
+    <ButtonIcon
+      label='dark mode'
+      className="link-hover"
+      handleClick={toggleDarkMode}
+    >
       {isDarkMode ? <HiOutlineSun /> : <HiOutlineMoon />}
     </ButtonIcon>
   );

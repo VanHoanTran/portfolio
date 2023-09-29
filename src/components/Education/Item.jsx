@@ -1,3 +1,5 @@
+import { skills } from "../../Data/Skills";
+
 const Item = ({ item }) => {
   const { title, content, id } = item;
   return (
@@ -7,6 +9,7 @@ const Item = ({ item }) => {
         {title}
       </h2>
       <p className="content ml-8 pb-2 dark:border-slate-300 ">{content}</p>
+      <img src={skills[0].languages[0].icon} alt="dafsdf" />
     </li>
   );
 };

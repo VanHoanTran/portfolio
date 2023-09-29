@@ -39,7 +39,7 @@ const projects = [
 ];
 const Projects = () => {
   return (
-    <div className="mt-8 max-w-full px-8 lg:mt-0 lg:px-16">
+    <div id="projects" className=" mt-8 max-w-full scroll-mt-24 px-8 lg:px-16">
       <h1 className="border-b border-slate-700  pb-2 text-3xl font-semibold uppercase tracking-wide dark:border-slate-300 lg:text-4xl">
         Projects
       </h1>
