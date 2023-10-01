@@ -3,6 +3,7 @@ import { HiBars3 } from "react-icons/hi2";
 import useOutsideClick from "../../hooks/useOutsideClick";
 import { createPortal } from "react-dom";
 import ButtonIcon from "./ButtonIcon";
+import { Link as ReactLink } from "react-router-dom";
 const MenusContext = createContext();
 
 function Menus({ children }) {
@@ -61,18 +62,21 @@ const Menu = ({ children }) => {
   return <div className="flex items-center justify-center">{children}</div>;
 };
 
-const Link = ({ icon, children, href }) => {
+const Link = ({ icon, children, section, type = "secondary" }) => {
   const { close } = useContext(MenusContext);
+  const primary = "rounded-full bg-rose-500 px-3 py-1 mt-1 text-slate-100 ";
   return (
     <li>
-      <a
-        href={href}
-        className="flex w-full items-center space-x-4 px-4 py-2 text-center transition-all [&_svg]:text-lg "
+      <ReactLink
+        to={section}
+        className={`link-hover flex w-full items-center space-x-4 px-4 py-2 text-center transition-all [&_svg]:text-[1.4rem] ${
+          type === "primary" ? primary : ""
+        }`}
         onClick={close}
       >
         {icon}
         <span>{children}</span>
-      </a>
+      </ReactLink>
     </li>
   );
 };

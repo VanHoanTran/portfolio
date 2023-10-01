@@ -1,30 +1,12 @@
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import Education from "./components/Education/Education";
-import Footer from "./components/Footer";
-import Layout from "./components/Layout";
-import Main from "./components/Main";
-import Nav from "./components/Nav/Nav";
-import Projects from "./components/Projects/Projects";
-import Menus from "./components/common/Menus";
-import { DarkModeProvider } from "./context/DarkModeContext";
-function App() {
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Page from "./Page";
+
+export default function App() {
   return (
-    <DarkModeProvider>
-      <Layout>
-        <Menus>
-          <Nav />
-        </Menus>
-        <Main>
-          <About />
-          <Education />
-          <Projects />
-          <Contact />
-        </Main>
-        <Footer />
-      </Layout>
-    </DarkModeProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Page />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 
 const useOutsideClick = (handler, listenCapturing = true) => {
   const ref = useRef();
-  console.log(ref);
   useEffect(() => {
     const handleClick = (e) => {
       if (ref.current && !ref.current.contains(e.target)) {

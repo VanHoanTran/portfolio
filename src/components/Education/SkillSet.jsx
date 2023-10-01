@@ -16,8 +16,6 @@ const SkillSet = ({ skillSet, index }) => {
           <Skill item={item} key={item.name} />
         ))}
       </ul>
-      {/* <p className="content ml-8 pb-2 dark:border-slate-300 ">{}</p>
-      <img src={icon} alt={`image of ${name}`} /> */}
     </li>
   );
 };

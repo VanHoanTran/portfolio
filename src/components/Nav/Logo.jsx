@@ -1,9 +1,9 @@
-import { Bio } from "/src/data/Bio";
+import { bio } from "/src/data/bio";
 
 const Logo = () => {
   return (
     <div className=" link-hover min-w-max cursor-pointer text-3xl font-bold">
-      {Bio.author}
+      {bio.author}
     </div>
   );
 };
