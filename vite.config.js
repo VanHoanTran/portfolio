@@ -14,11 +14,11 @@ export default defineConfig({
     port: 8080,
     open: true,
   },
-  // resolve: {
-  //   alias: {
-  //     "/src": resolve(__dirname, "src"),
-  //   },
-  // },
+  resolve: {
+    alias: {
+      "@data": "./src/data",
+    },
+  },
   build: {
     outDir,
     emptyOutDir: true,
