@@ -8,7 +8,7 @@ export default defineConfig({
     alias: {
       // Define your aliases here
       "@components": "/src/components",
-      "@data": "/src/data",
+      "@data": "src/data",
     },
   },
 });
