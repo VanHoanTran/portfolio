@@ -1,4 +1,4 @@
-import { bio } from "/src/data/bio";
+import { bio } from "../../data/bio";
 import { TypeAnimation } from "react-type-animation";
 
 const personalities = [
