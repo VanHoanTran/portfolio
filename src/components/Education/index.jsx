@@ -1,6 +1,6 @@
-import { edu } from "@data/edu";
+import { edu } from "@data/edu.js";
 import SkillSet from "./SkillSet";
-import { skills } from "@data/skills";
+import { skills } from "@data/skills.js";
 const Education = () => {
   return (
     <section
