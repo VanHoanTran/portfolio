@@ -1,4 +1,4 @@
-import ContactInfo from "@components/Contact/ContactInfo";
+import ContactInfo from "./ContactInfo";
 const Contact = () => {
   return (
     <section id="contact" className="max-w-full scroll-mt-24 px-8 lg:px-16">
