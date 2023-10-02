@@ -1,4 +1,4 @@
-import { useDarkMode } from "../../context/DarkModeContext";
+import { useDarkMode } from "/src/context/DarkModeContext";
 import ButtonIcon from "../common/ButtonIcon";
 import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi2";
 
@@ -7,7 +7,7 @@ const DarkModeToggle = () => {
 
   return (
     <ButtonIcon
-      label='dark mode'
+      label="dark mode"
       className="link-hover"
       handleClick={toggleDarkMode}
     >

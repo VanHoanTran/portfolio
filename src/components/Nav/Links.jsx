@@ -1,6 +1,6 @@
 import DarkModeToggle from "./DarkModeToggle";
 import NavLink from "./NavLink";
-import { NavOptions } from "../../constants/NavOptions";
+import { NavOptions } from "/src/constants/NavOptions";
 import MobileLinks from "./MobileLinks";
 
 const Links = () => {

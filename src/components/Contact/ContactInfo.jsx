@@ -1,6 +1,6 @@
 import { AiOutlineLinkedin, AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { bio } from "../../data/bio";
+import { bio } from "/src/data/bio";
 import { VscGithub } from "react-icons/vsc";
 
 const ContactInfo = () => {
