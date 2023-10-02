@@ -16,7 +16,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@data": "./src/data",
+      "@data": "src/data",
     },
   },
   build: {
