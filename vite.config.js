@@ -19,13 +19,13 @@ export default defineConfig({
       "@data": "src/data",
     },
   },
-  build: {
-    outDir,
-    emptyOutDir: true,
-    //   rollupOptions: {
-    //     input: {
-    //       main: resolve(__dirname, "index.html"),
-    //     },
-    //   },
-  },
+  // build: {
+  //   outDir,
+  //   emptyOutDir: true,
+  //   //   rollupOptions: {
+  //   //     input: {
+  //   //       main: resolve(__dirname, "index.html"),
+  //   //     },
+  //   //   },
+  // },
 });
