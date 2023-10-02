@@ -1,13 +1,13 @@
 import { useLocation } from "react-router-dom";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import Education from "./components/Education/Education";
-import Footer from "./components/Footer";
-import Layout from "./components/Layout";
-import Main from "./components/Main";
-import Nav from "./components/Nav/Nav";
-import Projects from "./components/Projects/Projects";
-import { DarkModeProvider } from "./context/DarkModeContext";
+import About from "./About";
+import Contact from "./Contact";
+import Education from "./Education";
+import Footer from "./common/Footer";
+import Layout from "./common/Layout";
+import Main from "./common/Main";
+import Nav from "./Nav";
+import Projects from "./Projects";
+import { DarkModeProvider } from "../context/DarkModeContext";
 import { useEffect } from "react";
 
 function Page() {
