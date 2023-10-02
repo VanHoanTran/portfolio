@@ -6,11 +6,10 @@ import { resolve } from "path";
 
 // https://vitejs.dev/config/
 
-const root = resolve(__dirname, "src");
 const outDir = resolve(__dirname, "dist");
+console.log(outDir);
 export default defineConfig({
   plugins: [react()],
-  root,
   server: {
     port: 8080,
     open: true,
@@ -23,10 +22,10 @@ export default defineConfig({
   build: {
     outDir,
     emptyOutDir: true,
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-      },
-    },
+    //   rollupOptions: {
+    //     input: {
+    //       main: resolve(__dirname, "index.html"),
+    //     },
+    //   },
   },
 });
