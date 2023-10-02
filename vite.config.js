@@ -15,6 +15,11 @@ export default defineConfig({
     port: 8080,
     open: true,
   },
+  resolve: {
+    alias: {
+      "/src": resolve(__dirname, "src"),
+    },
+  },
   build: {
     outDir,
     emptyOutDir: true,
