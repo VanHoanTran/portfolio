@@ -15,18 +15,18 @@ export default defineConfig({
     port: 8080,
     open: true,
   },
-  resolve: {
-    alias: {
-      "/src": resolve(__dirname, "src"),
-    },
-  },
+  // resolve: {
+  //   alias: {
+  //     "/src": resolve(__dirname, "src"),
+  //   },
+  // },
   build: {
     outDir,
     emptyOutDir: true,
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-      },
-    },
+    // rollupOptions: {
+    //   input: {
+    //     main: resolve(__dirname, "index.html"),
+    //   },
+    // },
   },
 });
