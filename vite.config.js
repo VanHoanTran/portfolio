@@ -9,11 +9,11 @@ export default defineConfig({
   resolve: {
     alias: {
       // Define your aliases here
-      "@components": path.resolve(__dirname, "src/components"),
-      "@data": path.resolve(__dirname, "src/data"),
-      "@hooks": path.resolve(__dirname, "src/hooks"),
-      "@context": path.resolve(__dirname, "src/context"),
-      "@constant": path.resolve(__dirname, "src/constant"),
+      "@components": path.resolve(__dirname, "./src/components"),
+      "@data": path.resolve(__dirname, "./src/data"),
+      "@hooks": path.resolve(__dirname, "./src/hooks"),
+      "@context": path.resolve(__dirname, "./src/context"),
+      "@constant": path.resolve(__dirname, "./src/constant"),
     },
   },
 });
