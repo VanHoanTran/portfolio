@@ -5,13 +5,17 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/portfolio/",
   plugins: [react()],
-  resolve: {
-    preserveSymlinks: true,
-    // alias: {
-    //   // Define your aliases using path.resolve()
-    //   "/src": path.resolve(__dirname, "src"),
-    // },
+  server: {
+    port: 8080,
+    open: true,
   },
+  // build: {
+  //   rollupOptions: {
+  //     input: {
+  //       main: resolve(__dirname, "index.html"),
+  //       src: resolve(__dirname, "nested/index.html"),
+  //     },
+  //   },
+  // },
 });
