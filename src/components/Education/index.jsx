@@ -1,5 +1,5 @@
 import { edu } from "@data/edu.js";
-import SkillSet from "./SkillSet";
+import SkillSet from "@components/Education/SkillSet";
 import { skills } from "@data/skills.js";
 const Education = () => {
   return (

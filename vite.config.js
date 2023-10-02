@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
@@ -8,10 +9,11 @@ export default defineConfig({
   resolve: {
     alias: {
       // Define your aliases here
-      // eslint-disable-next-line no-undef
       "@components": path.resolve(__dirname, "src/components"),
-      // eslint-disable-next-line no-undef
       "@data": path.resolve(__dirname, "src/data"),
+      "@hooks": path.resolve(__dirname, "src/hooks"),
+      "@context": path.resolve(__dirname, "src/context"),
+      "@constant": path.resolve(__dirname, "src/constant"),
     },
   },
 });
