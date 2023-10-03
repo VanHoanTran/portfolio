@@ -3,34 +3,37 @@ import {
   HiOutlineFolder,
   HiOutlineInformationCircle,
 } from "react-icons/hi2";
-import Menus from "../common/Menus";
+import HamburgerMenu from "../common/HamburgerMenu";
 import { VscMortarBoard } from "react-icons/vsc";
 const MobileLinks = () => {
   return (
     <div className="md:hidden">
-      <Menus>
-        <Menus.Menu>
-          <Menus.Toggle id={0} />
-          <Menus.List id={0}>
-            <Menus.Link icon={<HiOutlineInformationCircle />} section="#about">
+      <HamburgerMenu>
+        <HamburgerMenu.Menu>
+          <HamburgerMenu.Toggle />
+          <HamburgerMenu.List>
+            <HamburgerMenu.Link
+              icon={<HiOutlineInformationCircle />}
+              section="#about"
+            >
               About
-            </Menus.Link>
-            <Menus.Link icon={<VscMortarBoard />} section="#education">
+            </HamburgerMenu.Link>
+            <HamburgerMenu.Link icon={<VscMortarBoard />} section="#education">
               Education
-            </Menus.Link>
-            <Menus.Link icon={<HiOutlineFolder />} section="#projects">
+            </HamburgerMenu.Link>
+            <HamburgerMenu.Link icon={<HiOutlineFolder />} section="#projects">
               Projects
-            </Menus.Link>
-            <Menus.Link
+            </HamburgerMenu.Link>
+            <HamburgerMenu.Link
               icon={<HiOutlineChatBubbleLeft />}
               section="#contact"
               type="primary"
             >
               Let&apos;s talk
-            </Menus.Link>
-          </Menus.List>
-        </Menus.Menu>
-      </Menus>
+            </HamburgerMenu.Link>
+          </HamburgerMenu.List>
+        </HamburgerMenu.Menu>
+      </HamburgerMenu>
     </div>
   );
 };

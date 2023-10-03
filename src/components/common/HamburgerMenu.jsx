@@ -1,40 +1,37 @@
 import { createContext, useContext, useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
-import useOutsideClick from "/src/hooks/useOutsideClick";
+import useOutsideClick from "../../hooks/useOutsideClick";
 import { createPortal } from "react-dom";
 import ButtonIcon from "./ButtonIcon";
 import { Link as ReactLink } from "react-router-dom";
-const MenusContext = createContext();
+const HamburgerMenuContext = createContext();
 
-function Menus({ children }) {
+function HamburgerMenu({ children }) {
   const [position, setPosition] = useState({});
-  const [openId, setOpenId] = useState("");
-  const close = () => setOpenId("");
+  const [open, setOpen] = useState(false);
+  const close = () => setOpen(false);
   return (
-    <MenusContext.Provider
-      value={{ position, setPosition, openId, close, open: setOpenId }}
+    <HamburgerMenuContext.Provider
+      value={{ position, setPosition, open, close, setOpen }}
     >
       {children}
-    </MenusContext.Provider>
+    </HamburgerMenuContext.Provider>
   );
 }
 
-function Toggle({ id }) {
-  const { open, close, openId, setPosition } = useContext(MenusContext);
-
+function Toggle() {
+  const { setOpen, setPosition } = useContext(HamburgerMenuContext);
   const handleClick = (e) => {
+    // prevent the click buble up which will be capture
+    // by useOutsideClick, then execute close() right away.
     e.stopPropagation();
     const rect = e.target.closest("button").getBoundingClientRect();
-    console.log(rect);
     setPosition({
       x: (window.innerWidth - rect.right).toString(),
       y: rect.bottom.toString(),
     });
-    // setPosition({
-    //   x: rect.x.toString(),
-    //   y: rect.y.toString(),
-    // });
-    openId === "" || openId !== id ? open(id) : close();
+
+    setOpen((open) => !open);
   };
 
   return (
@@ -44,11 +41,11 @@ function Toggle({ id }) {
   );
 }
 
-const List = ({ id, children }) => {
-  const { close, openId, position } = useContext(MenusContext);
+const List = ({ children }) => {
+  const { open, close, position } = useContext(HamburgerMenuContext);
   const { ref } = useOutsideClick(close, false);
-  if (openId !== id) return null;
-
+  // create a menu when it is open.
+  if (!open) return null;
   return createPortal(
     <ul
       ref={ref}
@@ -65,8 +62,8 @@ const Menu = ({ children }) => {
   return <div className="flex items-center justify-center">{children}</div>;
 };
 
-const Link = ({ icon, children, section, type = "secondary" }) => {
-  const { close } = useContext(MenusContext);
+const Link = ({ icon, children, section, type = "" }) => {
+  const { close } = useContext(HamburgerMenuContext);
   const primary = "rounded-full bg-rose-500 px-3 py-1 mt-1 text-slate-100 ";
   return (
     <li>
@@ -83,9 +80,9 @@ const Link = ({ icon, children, section, type = "secondary" }) => {
     </li>
   );
 };
-Menus.Menu = Menu;
-Menus.Toggle = Toggle;
-Menus.List = List;
-Menus.Link = Link;
+HamburgerMenu.Menu = Menu;
+HamburgerMenu.Toggle = Toggle;
+HamburgerMenu.List = List;
+HamburgerMenu.Link = Link;
 
-export default Menus;
+export default HamburgerMenu;
