@@ -9,11 +9,10 @@ const MenusContext = createContext();
 function Menus({ children }) {
   const [position, setPosition] = useState({});
   const [openId, setOpenId] = useState("");
-  const open = setOpenId;
   const close = () => setOpenId("");
   return (
     <MenusContext.Provider
-      value={{ position, setPosition, openId, close, open }}
+      value={{ position, setPosition, openId, close, open: setOpenId }}
     >
       {children}
     </MenusContext.Provider>
@@ -26,11 +25,15 @@ function Toggle({ id }) {
   const handleClick = (e) => {
     e.stopPropagation();
     const rect = e.target.closest("button").getBoundingClientRect();
+    console.log(rect);
     setPosition({
-      x: (window.innerWidth - rect.width - rect.x).toString(),
-      y: (rect.y + rect.height + 8).toString(),
+      x: (window.innerWidth - rect.right).toString(),
+      y: rect.bottom.toString(),
     });
-    console.log({ openId, id });
+    // setPosition({
+    //   x: rect.x.toString(),
+    //   y: rect.y.toString(),
+    // });
     openId === "" || openId !== id ? open(id) : close();
   };
 
