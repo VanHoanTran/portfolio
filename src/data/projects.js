@@ -1,37 +1,121 @@
 export const projects = [
   {
     id: 1,
-    title: "Project 1",
-    description: "This is the description for Project 1",
-    startDate: "2023-01-15",
-    endDate: "2023-03-30",
+    title: "Sale Manager",
+    description:
+      "A modern sale management system that helps a business to monitor their sale, current activities and inventory.",
+    image: "/project-images/sale-manager.png",
+    techStack: [
+      {
+        name: "Typescript",
+        icon: "icons/typescript.svg",
+        level: "",
+      },
+      {
+        name: "React",
+        icon: "icons/react.svg",
+        level: "",
+      },
+      {
+        name: "Tailwinds",
+        icon: "icons/tailwinds.svg",
+        level: "",
+      },
+      {
+        name: "MongoDB",
+        icon: "icons/mongodb.svg",
+        level: "",
+      },
+      {
+        name: "ApexCharts",
+        icon: "",
+        level: "",
+      },
+      {
+        name: "Redux",
+        icon: "",
+        level: "",
+      },
+    ],
   },
   {
     id: 2,
     title: "Project 2",
+    image: "/project-images/sale-manager.png",
     description: "This is the description for Project 2",
-    startDate: "2023-02-10",
-    endDate: "2023-04-25",
+    techStack: [
+      {
+        name: "Typescript",
+        icon: "icons/typescript.svg",
+        level: "",
+      },
+      {
+        name: "React",
+        icon: "icons/react.svg",
+        level: "",
+      },
+      {
+        name: "Tailwinds",
+        icon: "icons/tailwinds.svg",
+        level: "",
+      },
+      {
+        name: "MongoDB",
+        icon: "icons/mongodb.svg",
+        level: "",
+      },
+      {
+        name: "ApexCharts",
+        icon: "icons/mongodb.svg",
+        level: "",
+      },
+      {
+        name: "Redux",
+        icon: "icons/mongodb.svg",
+        level: "",
+      },
+    ],
   },
-  {
-    id: 3,
-    title: "Project 3",
-    description: "This is the description for Project 3",
-    startDate: "2023-03-20",
-    endDate: "2023-06-15",
-  },
-  {
-    id: 4,
-    title: "Project 4",
-    description: "This is the description for Project 4",
-    startDate: "2023-04-05",
-    endDate: "2023-07-10",
-  },
-  {
-    id: 5,
-    title: "Project 5",
-    description: "This is the description for Project 5",
-    startDate: "2023-05-12",
-    endDate: "2023-08-20",
-  },
+  // {
+  //   id: 3,
+  //   title: "Project 3",
+  //   image: "/project-images/sale-manager.png",
+  //   description: "This is the description for Project 3",
+  //   techStack: [
+  //     "Typescript",
+  //     "React 18",
+  //     "Tailwindcss",
+  //     "MongoDB",
+  //     "ApexCharts",
+  //     "Redux",
+  //   ],
+  // },
+  // {
+  //   id: 4,
+  //   title: "Project 4",
+  //   image: "/project-images/sale-manager.png",
+  //   description: "This is the description for Project 4",
+  //   techStack: [
+  //     "Typescript",
+  //     "React 18",
+  //     "Tailwindcss",
+  //     "MongoDB",
+  //     "ApexCharts",
+  //     "Redux",
+  //   ],
+  // },
+  // {
+  //   id: 5,
+  //   title: "Project 5",
+  //   image: "/project-images/sale-manager.png",
+  //   description: "This is the description for Project 5",
+  //   techStack: [
+  //     "Typescript",
+  //     "React 18",
+  //     "Tailwindcss",
+  //     "MongoDB",
+  //     "ApexCharts",
+  //     "Redux",
+  //   ],
+  // },
 ];

@@ -4,7 +4,7 @@ const NavLink = ({ section, label, children, type = "secondary" }) => {
   const primary = "rounded-full bg-rose-500 px-4 py-1 text-slate-100 ";
 
   return (
-    <li className="link-hover cursor-pointer">
+    <li className="link-hover min-w-fit cursor-pointer ">
       <Link
         to={section}
         className={` focus:underline ${type === "primary" ? primary : " "}`}

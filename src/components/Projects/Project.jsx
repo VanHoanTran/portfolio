@@ -1,19 +1,30 @@
 import useScroll from "../../hooks/useScroll";
-
+import Skill from "../Education/Skill";
 const Project = ({ project }) => {
   const { inView, ref } = useScroll();
+  console.log(project);
   return (
     <li
       ref={ref}
-      className={`mx-1 my-4 flex h-[50vh] w-[40vw] flex-shrink-0  ${
+      className={`mx-1 my-4 grid min-h-fit grid-cols-12  ${
         inView ? "animate-slide-in " : "animate-slide-out"
-      } flex-col items-center justify-between rounded-lg  bg-slate-50 p-4 shadow-md shadow-slate-600  transition duration-700 first:bg-rose-400 first:text-slate-100 dark:bg-slate-500 dark:text-slate-100 dark:shadow-none dark:first:bg-rose-400 `}
+      }  items-center justify-between rounded-lg border border-slate-400 bg-slate-600  shadow-md  shadow-slate-600 transition  duration-700 first:text-slate-100  dark:text-slate-100  dark:shadow-none `}
     >
-      <h2 className="text-xl font-semibold uppercase tracking-wide">
-        {project.title}
-      </h2>
-      <p className="text-center">{project.description}</p>
-      <p className="text-sm italic">{project.startDate}</p>
+      <div className=" order-2 col-span-12 flex min-h-[140px] flex-col  px-4 lg:order-1 lg:col-span-3">
+        <h2 className="col-span-full pb-2 pt-2 text-center text-lg font-semibold uppercase tracking-wide lg:text-xl">
+          {project.title}
+        </h2>
+        <p className="text-left text-sm italic">{project.description}</p>
+        <h6 className="mt-2 text-lg">Tech Stack</h6>
+        <ul className=" flex flex-wrap italic">
+          {project.techStack.map((tech, index) => (
+            <Skill key={index} small={true} item={tech} />
+          ))}
+        </ul>
+      </div>
+      <div className="order-1 col-span-full flex h-[60vh] min-w-fit items-center justify-center overflow-hidden rounded-t-lg duration-1000 ease-out lg:order-2 lg:col-span-9 lg:col-start-4 lg:translate-x-16 lg:rounded-l-none lg:rounded-r-lg xl:translate-x-0 ">
+        <img className="lg:rounded-lg" src={project.image} />
+      </div>
     </li>
   );
 };

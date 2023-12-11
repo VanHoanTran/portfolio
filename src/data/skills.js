@@ -8,6 +8,11 @@ export const skills = [
         level: "",
       },
       {
+        name: "Typescript",
+        icon: "icons/typescript.svg",
+        level: "",
+      },
+      {
         name: "HTML",
         icon: "icons/html.svg",
         level: "",

@@ -9,7 +9,7 @@ const Links = () => {
       <p className="line-clamp-2 hidden max-w-[200px] lg:inline-block">
         Open for any offers and collaborations
       </p>
-      <ul className="hidden space-x-8 rounded-full border border-slate-500 py-1 pl-4 pr-1 transition-all md:flex">
+      <ul className="hidden min-w-fit space-x-8 rounded-full border border-slate-500 py-1 pl-4 pr-1 transition-all md:flex">
         {NavOptions.map(({ label, section, type }) => (
           <NavLink key={label} label={label} section={section} type={type} />
         ))}

@@ -23,7 +23,7 @@ export default {
     },
     extend: {
       animation: {
-        "scale-down": "zoom-out .2s ease-out forwards",
+        "scale-down": "zoom-out .2s ease-in forwards",
         "scale-up": "zoom-in .2s ease-out forwards",
         "slide-in":
           "slide-in .5s ease-in forwards, fade-in ease-in .5s forwards",
@@ -121,6 +121,8 @@ export default {
           },
         },
       },
+
+      backgroundImage: {},
     },
   },
   plugins: ["@tailwindcss/typography"],
