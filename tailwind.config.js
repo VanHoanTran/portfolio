@@ -23,37 +23,84 @@ export default {
     },
     extend: {
       animation: {
+        "scale-down": "zoom-out .2s ease-out forwards",
+        "scale-up": "zoom-in .2s ease-out forwards",
+        "slide-in":
+          "slide-in .5s ease-in forwards, fade-in ease-in .5s forwards",
+        "slide-out":
+          "slide-out .5s ease-out forwards, fade-out ease-out .5s forwards",
         "zoom-fade-in":
           "fade-in 2s linear forwards, zoom-in 2s linear forwards",
+        "zoom-fade-out":
+          "fade-out 2s linear forwards, zoom-out 2s linear forwards",
         "fade-in": "fade-in 2s linear forwards",
-        "zoom-in": "zoom 2s linear forwards",
+        "zoom-in": "zoom-in 2s linear forwards",
         typewriter:
           "typing 5s steps(50,end) infinite, blink .5s step-end infinite",
       },
       keyframes: {
+        "slide-in": {
+          "0%": {
+            transform: "translateX(10px)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+        "slide-out": {
+          "0%": {
+            transform: "translateX(0px)",
+          },
+
+          "100%": {
+            transform: "translateX(-10px)",
+          },
+        },
         "fade-in": {
           "0%": {
             opacity: "0",
           },
+
           "100%": {
             opacity: "1",
           },
         },
-        "zoom-in": {
+        "fade-out": {
           "0%": {
-            transform: "scale(0)",
-          },
-          "25%": {
-            transform: "scale(0.4)",
-          },
-          "50%": {
-            transform: "scale(0.8)",
-          },
-          "75%": {
-            transform: "scale(1.2)",
+            opacity: "1",
           },
           "100%": {
+            opacity: "0",
+          },
+        },
+        "zoom-in": {
+          "0%": {
+            transform: "scaleX(0) scaleY(0)",
+          },
+
+          "100%": {
+            transform: "scaleX(1) scaleY(1) ",
+          },
+        },
+        "zoom-out": {
+          "0%": {
             transform: "scale(1)",
+          },
+          "20%": {
+            transform: "scale(0.8)",
+          },
+          "40%": {
+            transform: "scale(0.6)",
+          },
+          "60%": {
+            transform: "scale(0.4)",
+          },
+          "80%": {
+            transform: "scale(0.2)",
+          },
+
+          "100%": {
+            transform: "scale(0)",
           },
         },
         blink: {

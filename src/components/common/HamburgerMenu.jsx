@@ -45,12 +45,14 @@ const List = ({ children }) => {
   const { open, close, position } = useContext(HamburgerMenuContext);
   const { ref } = useOutsideClick(close, false);
   // create a menu when it is open.
-  if (!open) return null;
+  //if (!open) return null;
   return createPortal(
     <ul
       ref={ref}
       style={{ right: `${position.x}px`, top: `${position.y}px` }}
-      className="fixed z-20 rounded-lg bg-slate-100 p-4  text-slate-700 shadow-md dark:bg-slate-600 dark:text-slate-200"
+      className={`${
+        !open ? " animate-scale-down" : "animate-scale-up"
+      } fixed z-20 origin-top-right  rounded-lg bg-slate-100 p-4  text-slate-700 shadow-md dark:bg-slate-600 dark:text-slate-200`}
     >
       {children}
     </ul>,

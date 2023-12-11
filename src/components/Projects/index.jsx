@@ -1,6 +1,5 @@
 import { projects } from "@data/projects.js";
 import Project from "./Project";
-
 const Projects = () => {
   return (
     <section
@@ -11,9 +10,9 @@ const Projects = () => {
         Projects
       </h1>
 
-      <ul className="mt-4 flex flex-wrap items-center justify-center py-4 lg:py-8 ">
-        {projects.map((project) => (
-          <Project project={project} key={project.id} />
+      <ul className="mt-4 flex flex-col flex-wrap items-center justify-center py-4 lg:py-8 ">
+        {projects.map((project, index) => (
+          <Project project={project} key={project.id} index={index} />
         ))}
       </ul>
     </section>
