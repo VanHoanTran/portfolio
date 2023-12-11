@@ -10,7 +10,7 @@ const Projects = () => {
         Projects
       </h1>
 
-      <ul className="mt-4 flex flex-col flex-wrap items-center justify-center py-4 lg:px-20 lg:py-8 ">
+      <ul className="mt-4 flex flex-col flex-wrap items-center justify-center py-4 lg:py-8 lg:pr-10 ">
         {projects.map((project, index) => (
           <Project project={project} key={project.id} index={index} />
         ))}
