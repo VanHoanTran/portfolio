@@ -2,6 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "Sale Manager",
+    link: "https://github.com/VanHoanTran/sale-manager",
     description:
       "A modern sale management system that helps a business to monitor their sale, current activities and inventory.",
     image: "/project-images/sale-manager.png",
@@ -41,6 +42,7 @@ export const projects = [
   {
     id: 2,
     title: "The Wild Oasis",
+    link: "https://github.com/VanHoanTran/the-wild-oasis",
     image: "/project-images/thewildoasis.png",
     description:
       "A React web application for a boutique hotel back office to manage bookings, cabins, and customers",
@@ -76,6 +78,7 @@ export const projects = [
     id: 2,
     title: "Auto Quotes",
     image: "/project-images/autoquotes.png",
+    link: "https://github.com/VanHoanTran/Auto-Quotes",
     description:
       "A team project with 3 separate interfaces including customer, mechanic shop back office, and suppliers.",
     techStack: [
