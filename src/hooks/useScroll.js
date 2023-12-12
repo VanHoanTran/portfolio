@@ -9,30 +9,21 @@ import { useEffect, useRef, useState } from "react";
 // }
 
 const options = {
-  rootMargin: "-10% 0%",
-  threshold: [0.7],
+  rootMargin: "0%",
+  threshold: [0.5],
 };
 const useScroll = () => {
   const [inView, setInView] = useState(false);
   const ref = useRef();
-  //const [ref, setRef] = useState(null);
-  // const [observedRef, setObservedRef] = useState(null);
-
   useEffect(() => {
-    console.log(ref);
-
     const observer = new IntersectionObserver((entries) => {
-      console.log(entries);
       entries.forEach((entry) => {
         setInView(entry.isIntersecting);
-        console.log(entry.intersectionRatio);
       });
     }, options);
 
     if (ref) observer.observe(ref.current);
   }, [ref]);
-
-  //return { inView, setRef };
 
   return { inView, ref };
 };

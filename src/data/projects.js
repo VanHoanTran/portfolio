@@ -40,13 +40,14 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Project 2",
-    image: "/project-images/sale-manager.png",
-    description: "This is the description for Project 2",
+    title: "The Wild Oasis",
+    image: "/project-images/thewildoasis.png",
+    description:
+      "A React web application for a boutique hotel back office to manage bookings, cabins, and customers",
     techStack: [
       {
-        name: "Typescript",
-        icon: "icons/typescript.svg",
+        name: "Javascript",
+        icon: "icons/javascript.svg",
         level: "",
       },
       {
@@ -55,8 +56,37 @@ export const projects = [
         level: "",
       },
       {
-        name: "Tailwinds",
-        icon: "icons/tailwinds.svg",
+        name: "React Query",
+        icon: "",
+        level: "",
+      },
+      {
+        name: "Styled Component",
+        icon: "",
+        level: "",
+      },
+      {
+        name: "React Hook Form",
+        icon: "",
+        level: "",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Auto Quotes",
+    image: "/project-images/autoquotes.png",
+    description:
+      "A team project with 3 separate interfaces including customer, mechanic shop back office, and suppliers.",
+    techStack: [
+      {
+        name: "Javascript",
+        icon: "icons/javascript.svg",
+        level: "",
+      },
+      {
+        name: "React",
+        icon: "icons/react.svg",
         level: "",
       },
       {
@@ -65,57 +95,20 @@ export const projects = [
         level: "",
       },
       {
-        name: "ApexCharts",
-        icon: "icons/mongodb.svg",
+        name: "Express",
+        icon: "",
         level: "",
       },
       {
-        name: "Redux",
-        icon: "icons/mongodb.svg",
+        name: "Redux-Saga",
+        icon: "",
+        level: "",
+      },
+      {
+        name: "Cypress.io",
+        icon: "",
         level: "",
       },
     ],
   },
-  // {
-  //   id: 3,
-  //   title: "Project 3",
-  //   image: "/project-images/sale-manager.png",
-  //   description: "This is the description for Project 3",
-  //   techStack: [
-  //     "Typescript",
-  //     "React 18",
-  //     "Tailwindcss",
-  //     "MongoDB",
-  //     "ApexCharts",
-  //     "Redux",
-  //   ],
-  // },
-  // {
-  //   id: 4,
-  //   title: "Project 4",
-  //   image: "/project-images/sale-manager.png",
-  //   description: "This is the description for Project 4",
-  //   techStack: [
-  //     "Typescript",
-  //     "React 18",
-  //     "Tailwindcss",
-  //     "MongoDB",
-  //     "ApexCharts",
-  //     "Redux",
-  //   ],
-  // },
-  // {
-  //   id: 5,
-  //   title: "Project 5",
-  //   image: "/project-images/sale-manager.png",
-  //   description: "This is the description for Project 5",
-  //   techStack: [
-  //     "Typescript",
-  //     "React 18",
-  //     "Tailwindcss",
-  //     "MongoDB",
-  //     "ApexCharts",
-  //     "Redux",
-  //   ],
-  // },
 ];
